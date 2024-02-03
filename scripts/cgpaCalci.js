@@ -1,5 +1,4 @@
-import { allSemPapers } from "../data/data.js";
-import { gradePoints } from "../data/data.js";
+import { allSemPapers, gradePoints } from "../data/data.js";
 
 
 /******Generates HTML*******/
