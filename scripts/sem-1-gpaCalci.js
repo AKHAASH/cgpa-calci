@@ -50,12 +50,12 @@ document.querySelector('.js-gpa-calculator')
 
 /******Required Functions******/
 
-function generateHTML(sem1){
+function generateHTML(sem){
   let html='';
   for(let i=0;i<8;i++){
     html+=`
-      ${i+1}. ${sem1[i].subject} 
-      <input type="text" placeholder="Grade"><h1></h1>
+      ${i+1}. ${sem[i].subject} 
+      <input type="text" placeholder="Grade"><p class="credits">${sem[i].credits}</p>
     `;
   }
   return html;

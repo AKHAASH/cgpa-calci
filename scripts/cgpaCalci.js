@@ -58,7 +58,7 @@ function generateHTML(sem){
   sem.forEach((paper)=>{
     html+=`
       ${i}. ${paper.subject} 
-      <input type="text" placeholder="Grade"><h1></h1>
+      <input type="text" placeholder="Grade"><p class="credits">${paper.credits}</p>
     `;
     i++;
   });
