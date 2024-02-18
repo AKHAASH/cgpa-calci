@@ -66,6 +66,42 @@ export const allSemPapers=[
   {
     subject:'Professional Skill - I',
     credits:1
+  },
+  {
+    subject:'Transforms and Partial Differencial Equations',
+    credits:4
+  },
+  {
+    subject:'Data Structures and Algorithms',
+    credits:4
+  },
+  {
+    subject:'Fundamentals of OS',
+    credits:4
+  },
+  {
+    subject:'Obect Orjiented Programming',
+    credits:3
+  },
+  {
+    subject:'Database Management System',
+    credits:3
+  },
+  {
+    subject:'Data Structures and Algorithms Laboratory',
+    credits:2
+  },
+  {
+    subject:'Obect Orjiented Programming Laboratory',
+    credits:2
+  },
+  {
+    subject:'Database Management System Laboratory',
+    credits:2
+  },
+  {
+    subject:'Professional Skills - II',
+    credits:1
   }
 ];
 export const gradePoints={
@@ -74,4 +110,6 @@ export const gradePoints={
   'a':8,
   'b+':7,
   'b':6,
+  'c':5,
+  'u':0
 };
