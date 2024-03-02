@@ -80,7 +80,7 @@ export const allSemPapers=[
     credits:4
   },
   {
-    subject:'Obect Orjiented Programming',
+    subject:'Object Oriented Programming',
     credits:3
   },
   {
