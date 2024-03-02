@@ -93,14 +93,18 @@ export const allSemPapers=[
   },
   {
     subject:'Obect Orjiented Programming Laboratory',
-    credits:2
+    credits:1.5
   },
   {
     subject:'Database Management System Laboratory',
-    credits:2
+    credits:1.5
   },
   {
     subject:'Professional Skills - II',
+    credits:1
+  },
+  {
+    subject:'Heritage of Tamil',
     credits:1
   }
 ];
