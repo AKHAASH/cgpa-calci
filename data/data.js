@@ -118,7 +118,7 @@ export function setAllsemPapers(){
       grade:''
     },
     {
-      subject:'Obect Orjiented Programming Laboratory',
+      subject:'Object Oriented Programming Laboratory',
       credits:1.5,
       grade:''
     },
