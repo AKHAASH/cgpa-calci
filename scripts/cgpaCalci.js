@@ -1,4 +1,6 @@
-import { allSemPapers, gradePoints } from "../data/data.js";
+import { allSemPapers, gradePoints,setAllsemPapers,save,setGrades } from "../data/data.js";
+
+setAllsemPapers();
 
 
 /******Generates HTML*******/
@@ -8,16 +10,20 @@ html+=generateHTML(allSemPapers);
 document.querySelector('.js-cgpa-calculator')
   .innerHTML=html+`
     <h1></h1>
-    <button>Calculate_CGPA</button>
+    <button class="js-calculate_cgpa">Calculate_CGPA</button>
+    <h1></h1>
+    <h1></h1>
+    <button class="js-save">save</button>
     <h1></h1>
     <h1></h1>
     <p class="js-result"></p>
   `;
+setGrades(allSemPapers,0);
 
 
 /******Calculates CGPA*******/
 
-document.querySelector('button').addEventListener('click',()=>{
+document.querySelector('.js-calculate_cgpa').addEventListener('click',()=>{
   const inputs=document.querySelectorAll('input');
   let myGradePoints=[];
   let result;
@@ -63,4 +69,11 @@ function generateHTML(sem){
   });
     return html;
 }
+
+
+//******Saving To LocalStorage******/
+
+document.querySelector('.js-save').addEventListener('click',()=>{
+  save(allSemPapers,0);
+});
 
