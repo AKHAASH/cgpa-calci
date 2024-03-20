@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CGPA_Calculator</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+      h2{
+        margin-bottom:35px;
+      }
+      .credits{
+        padding-left: 50px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h2>CGPA_CALCULATOR</h2>
+    <div class="grid-container">
+      <h3>Subjects</h3>
+      <h3>Grade</h3>
+      <h3>Credit Points</h3>
+    </div>
+     <div class="grid-container js-cgpa-calculator"></div>
+  </body>
+  <script type="module" src="scripts/cgpaCalci.js"></script>
+</html>
