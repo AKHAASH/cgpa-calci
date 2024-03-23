@@ -2,13 +2,33 @@
 <html>
   <head>
     <title>CGPA_LOGIN</title>
+    <style>
+      .centered-div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f0f0f0;
+        width: 300px; 
+        height: 170px;
+        border: 2px solid #333;
+        padding: 20px; 
+        box-sizing: border-box;
+      }
+      .divElems{
+        padding: 10px;
+        width: 210px;
+        margin-left: 10px;
+      }
+    </style>
   </head>
   <body>
-    <input class="js-login-input" type="text" placeholder="Enter Roll Number (AI2204)">
-    <a href="cgpaHome.html">
-      <button class="js-enter">Enter</button>
-    </a>
-    
+    <div class="centered-div">
+      <p><input class="js-login-input divElems" type="text" placeholder="Enter Roll Number (AI2204)"></p>
+      <a href="cgpaHome.html">
+        <button class="js-enter divElems">Enter</button>
+      </a>
+    </div>
     <script type="module" src="scripts/loginPage.js"></script>
   </body>
 </html>

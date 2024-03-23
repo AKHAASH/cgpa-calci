@@ -6,16 +6,37 @@
       a{
         text-decoration: none;
       }
+      .centered-div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f0f0f0;
+        width: 300px; 
+        height: 170px;
+        border: 2px solid #333;
+        padding: 20px; 
+        box-sizing: border-box;
+      }
+      .divElems{
+        padding: 10px;
+        width: 230px;
+        margin-left: 10px;
+      }
     </style>
   </head>
   <body>
-    <div>
-      <a href="cgpaCalci.html">
-        <button>CGPA_Calculator</button>
-      </a>
-      <a href="gpaCalci.html">
-        <button>GPA_Calculator</button>
-      </a>
+    <div class="centered-div">
+      <p>
+        <a href="cgpaCalci.html">
+        <button class="divElems">CGPA_Calculator</button>
+        </a>
+      </p>
+      <p>
+        <a href="gpaCalci.html">
+          <button class="divElems">GPA_Calculator</button>
+        </a>
+      </p>
     </div>
   </body>
 </html>
