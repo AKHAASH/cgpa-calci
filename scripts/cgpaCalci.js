@@ -30,10 +30,13 @@ document.querySelector('.js-calculate_cgpa').addEventListener('click',()=>{
   let numerator=0;
   let denominator=0;
   let i=0;
-
+  let j=0;
   inputs.forEach((input)=>{
-    let grade=input.value;
-    myGradePoints.push(gradePoints[(grade).toLowerCase()]);
+    let grade=(input.value).toLowerCase();
+    if (grade ==='u')
+      denominator=denominator-(allSemPapers[j].credits);
+    myGradePoints.push(gradePoints[grade]);
+    j++;
   });
 
   allSemPapers.forEach((paper)=>{

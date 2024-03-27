@@ -12,7 +12,7 @@ export function gpaCalci(start,end,semNO){
   document.querySelector('.js-gpa-calculator')
     .innerHTML=html+`
       <h1></h1>
-      <button>Calculate_GPA</button>
+      <button class="js-calculate_cgpa">Calculate_GPA</button>
       <h1></h1>
       <h1></h1>
       <button class="js-save">save</button>
@@ -23,18 +23,21 @@ export function gpaCalci(start,end,semNO){
   setGrades(allSemPapers,start);
 
 
-  /******Calculates SEM-I-GPA*******/
+  /******Calculates GPA*******/
 
-  document.querySelector('button').addEventListener('click',()=>{
+  document.querySelector('.js-calculate_cgpa').addEventListener('click',()=>{
     const inputs=document.querySelectorAll('input');
     let myGradePoints=[];
     let result;
     let numerator=0;
     let denominator=0;
-  
+    let i=start;
     inputs.forEach((input)=>{
-      let grade=input.value;
-      myGradePoints.push(gradePoints[(grade).toLowerCase()]);
+      let grade=(input.value).toLowerCase();
+      if (grade ==='u')
+        denominator=denominator-(allSemPapers[i].credits);
+      myGradePoints.push(gradePoints[grade]);
+      i++;
     });
 
     for(let i=start;i<end;i++){
