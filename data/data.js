@@ -178,12 +178,12 @@ export function updateSemPapers(){
       },
       {
         subject:'Foundation of Data Science Laboratory',
-        credits:2,
+        credits:1.5,
         grade:''
       },
       {
         subject:'Data Warehousing and Data Mining Laboratory',
-        credits:2,
+        credits:1.5,
         grade:''
       },
       {
@@ -192,6 +192,19 @@ export function updateSemPapers(){
         grade:''
       }
     );
+  }
+  if (allSemPapers.length===36){
+    allSemPapers.push(
+      {
+        subject:'Tamils and Technology',
+        credits:1,
+        grade:''
+      }
+    );
+  }
+  if (allSemPapers[33].credits===2){
+    allSemPapers[33].credits=1.5;
+    allSemPapers[34].credits=1.5;
   }
 }
 
