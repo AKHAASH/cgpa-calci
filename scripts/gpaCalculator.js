@@ -1,9 +1,10 @@
-import { allSemPapers, gradePoints, setAllsemPapers,setGrades,save } from "../data/data.js";
+import { allSemPapers, gradePoints, setAllsemPapers,setGrades,save,updateSemPapers } from "../data/data.js";
 
 
 export function gpaCalci(start,end,semNO){
 
   setAllsemPapers();
+  updateSemPapers();
 
   /******Generates HTML*******/
 
@@ -72,7 +73,7 @@ export function gpaCalci(start,end,semNO){
   }
 
 
-  //******Saving To LocalStorage******/
+  /******Saving To LocalStorage******/
 
   document.querySelector('.js-save').addEventListener('click',()=>{
     save(allSemPapers,start);

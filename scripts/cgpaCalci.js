@@ -1,7 +1,7 @@
-import { allSemPapers, gradePoints,setAllsemPapers,save,setGrades } from "../data/data.js";
+import { allSemPapers, gradePoints,setAllsemPapers,save,setGrades,updateSemPapers } from "../data/data.js";
 
 setAllsemPapers();
-
+updateSemPapers();
 
 /******Generates HTML*******/
 

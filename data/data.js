@@ -139,6 +139,63 @@ export function setAllsemPapers(){
     }
   ];
 }
+
+export function updateSemPapers(){
+
+  /***** Updating sem - IV papers *****/
+
+  if (allSemPapers.length===27){
+    allSemPapers.push(
+      {
+        subject:'Probability and Statistics',
+        credits:4,
+        grade:''
+      },
+      {
+        subject:'Computer Architecture',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Foundation of Data Science',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Data Warehousing and Data Mining',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Computer Networks',
+        credits:4,
+        grade:''
+      },
+      {
+        subject:'Environmental Science and Engineering',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Foundation of Data Science Laboratory',
+        credits:2,
+        grade:''
+      },
+      {
+        subject:'Data Warehousing and Data Mining Laboratory',
+        credits:2,
+        grade:''
+      },
+      {
+        subject:'Professional Skills - III',
+        credits:1,
+        grade:''
+      }
+    );
+  }
+}
+
+
 export const gradePoints={
   'o':10,
   'a+':9,
