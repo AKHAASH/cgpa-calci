@@ -206,6 +206,63 @@ export function updateSemPapers(){
     allSemPapers[33].credits=1.5;
     allSemPapers[34].credits=1.5;
   }
+
+  /***** Updating sem - V papers *****/
+
+  if (allSemPapers.length===37){
+    allSemPapers.push(
+      {
+        subject:'Discrete Mathematics',
+        credits:4,
+        grade:''
+      },
+      {
+        subject:'Software Engineering for Data Science',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Internet Of Things',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Machine Learning Techniques',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Foundations of Cloud Computing',
+        credits:4,
+        grade:''
+      },
+      {
+        subject:'PE-I(Getting Started with Competitive Programming)',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Machine Learning Laboratory',
+        credits:2,
+        grade:''
+      },
+      {
+        subject:'Internet of Things Laboratory',
+        credits:2,
+        grade:''
+      },
+      {
+        subject:'Design Project',
+        credits:1,
+        grade:''
+      },
+      {
+        subject:'Professional Skills - IV',
+        credits:1,
+        grade:''
+      }
+    );
+  }
 }
 
 
