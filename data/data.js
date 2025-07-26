@@ -263,6 +263,61 @@ export function updateSemPapers(){
       }
     );
   }
+
+  if (allSemPapers.length===47){
+    allSemPapers.push(
+      {
+        subject:'Deep Learning',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Applied Generative AI',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Professional Communication Laboratory',
+        credits:1,
+        grade:''
+      },
+      {
+        subject:'Operations Research',
+        credits:2,
+        grade:''
+      },
+      {
+        subject:'Big data Analytics',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Big Data Analytics Laboratory',
+        credits:2,
+        grade:''
+      },
+      {
+        subject:'Text Analytics',
+        credits:4,
+        grade:''
+      },
+      {
+        subject:'Deep Learning Laboratory',
+        credits:2,
+        grade:''
+      },
+      {
+        subject:'Comprehension',
+        credits:2,
+        grade:''
+      },
+      {
+        subject:'Design Project - II',
+        credits:1,
+        grade:''
+      }
+    )
+  }
 }
 
 
