@@ -264,6 +264,8 @@ export function updateSemPapers(){
     );
   }
 
+  /***** Updating sem - VI papers *****/
+
   if (allSemPapers.length===47){
     allSemPapers.push(
       {
@@ -314,6 +316,42 @@ export function updateSemPapers(){
       {
         subject:'Design Project - II',
         credits:1,
+        grade:''
+      }
+    )
+  }
+  /***** Updating sem - VII papers *****/
+
+  if (allSemPapers.length===57){
+    allSemPapers.push(
+      {
+        subject:'Ethical Design of Generative AI Applications',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Reinforcement Learning',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Reinforcement Learning Laboratory',
+        credits:2,
+        grade:''
+      },
+      {
+        subject:'Soft Computing',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Design Project-III',
+        credits:1,
+        grade:''
+      },
+      {
+        subject:'Open Elective',
+        credits:2,
         grade:''
       }
     )
