@@ -356,6 +356,32 @@ export function updateSemPapers(){
       }
     )
   }
+  /***** Updating sem - VIII papers *****/
+
+  if (allSemPapers.length===63){
+    allSemPapers.push(
+      {
+        subject:'Professional Elective - IV',
+        credits:3,
+        grade:''
+      },
+      {
+        subject:'Open Elective - III',
+        credits:2,
+        grade:''
+      },
+      {
+        subject:'Project Work',
+        credits:8,
+        grade:''
+      },
+      {
+        subject:'Internship',
+        credits:2,
+        grade:''
+      }
+    )
+  }
 }
 
 
